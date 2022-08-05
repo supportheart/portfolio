@@ -8,8 +8,8 @@
   background-color: #292929;
   padding-top: 20px;
   font-family: "GmarketSansLight", sans-serif;
-  height: 10000px;
   color: #fff;
+  padding-bottom: 600px;
 }
 
 .btn {
@@ -48,6 +48,7 @@ section > .inner {
   justify-content: flex-end;
   align-items: center;
   position: fixed;
+  z-index: 10;
 }
 
 #header .nav {
