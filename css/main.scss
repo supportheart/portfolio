@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-xl: 100px;
+$font-lg: 60px;
+$font-md: 40px;
+$font-sd: 30px;
+$font-sm: 20px;
+
+.wrap {
+  background-color: #292929;
+  padding-top: 20px;
+  font-family: 'GmarketSansLight', sans-serif;
+  height: 10000px;
+  color: #fff;
+}
+
+.btn {
+  font-size: 24px;
+  color: #fff;
+  padding: 8px 10px;
+  border: 1px solid #707070;
+  background-color: transparent;
+  text-align: center;
+  display: block;
+}
+
+section>.inner {
+  padding-top: 150px;
+}
+
+.inner {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.inner>h2 {
+  font-size: $font-lg;
+}
+
+.inner>article {
+  padding-top: 50px;
+}
+
+
+
+#header {
+  height: 90px;
+  width: 96%;
+  left: 2%;
+  border-bottom: 1px solid #D4D4D4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+}
+
+#header .nav {
+  font-style: $font-sm;
+  padding-right: 40px;
+}
+
+#header ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#header ul li+li {
+  margin-left: 30px;
+}
+
+#intro {
+  >.inner {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+
+    .intro_text {
+      font-size: $font-lg;
+
+      span.hello {
+        display: inline-block;
+        animation: wav 1s;
+        animation-delay: calc(.1s * var(--i));
+      }
+
+      strong {
+        display: block;
+        font-size: 120px;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+@keyframes wav {
+  0%, 40%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
+#about {
+  .about_contents {
+    display: flex;
+    justify-content: space-between;
+
+    .info {
+      ul {
+        li+li {
+          margin-top: 50px;
+        }
+      }
+
+      strong {
+        font-size: $font-md;
+      }
+
+      p {
+        margin-top: 10px;
+        font-size: $font-sm;
+        padding-left: 20px;
+        line-height: 1.4;
+        position: relative;
+      }
+    }
+
+    .me {
+      width: 50%;
+      height: auto;
+    }
+  }
+}
+
+#skills {
+  .skills_contents {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .skill_info {
+        width: 250px;
+        height: 250PX;
+        border-radius: 50%;
+        background-color: #fff;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .skill_dsc {
+        margin-top: 24px;
+
+        p {
+          font-size: $font-md;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+#works {
+  .works_contents {
+    .swiper {}
+
+    .work {
+      display: flex;
+      padding-left: 50px;
+
+      .work_img {
+        width: 960px;
+        height: 540px;
+        background-color: #fff;
+
+        img {
+          width: 100%
+        }
+      }
+
+      .work_info {
+        padding-left: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+          font-size: $font-md;
+        }
+
+        p {
+          margin: 25px 0;
+          font-size: $font-sm;
+        }
+      }
+    }
+  }
+}
+
+#contact {
+  .contact:first-child {
+    margin-bottom: 50px;
+  }
+
+  strong {
+    font-size: $font-md;
+  }
+
+  p {
+    font-size: $font-sd;
+    margin-top: 10px;
+    position: relative;
+    padding-left: 20px;
+  }
+}
