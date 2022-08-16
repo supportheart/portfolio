@@ -4,7 +4,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.wrap {
+body {
   background-color: #292929;
   padding-top: 20px;
   font-family: "GmarketSansLight", sans-serif;
@@ -161,8 +161,6 @@ section > .inner {
   padding-left: 50px;
 }
 #works .works_contents .work .work_img {
-  width: 960px;
-  height: 540px;
   background-color: #fff;
 }
 #works .works_contents .work .work_img img {
@@ -193,4 +191,54 @@ section > .inner {
   margin-top: 10px;
   position: relative;
   padding-left: 20px;
+}
+
+@media (max-width: 1024px) {
+  #skills .skills_contents .skill .skill_info {
+    width: 150px;
+    height: 150PX;
+  }
+  #works .works_contents .work {
+    flex-direction: column;
+    padding-left: 0;
+  }
+  #works .works_contents .work .work_img {
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  #works .works_contents .work .work_info {
+    padding-left: 0;
+    padding-top: 60px;
+  }
+  #works .works_contents .work .work_info .btn {
+    display: inline;
+    width: 150px;
+  }
+  .swiper .swiper-pagination {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #intro > .inner .intro_text {
+    font-size: 40px;
+  }
+  #intro > .inner .intro_text strong {
+    font-size: 60px;
+  }
+}
+@media (max-width: 600px) {
+  #skills .skills_contents ul {
+    flex-direction: column;
+  }
+  #skills .skills_contents ul li {
+    padding-top: 30px;
+  }
+  #skills .skills_contents ul li:first-child {
+    padding-top: 0;
+  }
+  #skills .skills_contents .skill .skill_info {
+    width: 150px;
+    height: 150PX;
+  }
 }/*# sourceMappingURL=main.css.map */

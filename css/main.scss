@@ -5,13 +5,13 @@
   font-style: normal;
 }
 
-$font-xl: 100px;
+$font-xl: 120px;
 $font-lg: 60px;
 $font-md: 40px;
 $font-sd: 30px;
 $font-sm: 20px;
 
-.wrap {
+body {
   background-color: #292929;
   padding-top: 20px;
   font-family: 'GmarketSansLight', sans-serif;
@@ -92,7 +92,7 @@ section>.inner {
 
       strong {
         display: block;
-        font-size: 120px;
+        font-size: $font-xl;
         margin-top: 50px;
       }
     }
@@ -100,9 +100,13 @@ section>.inner {
 }
 
 @keyframes wav {
-  0%, 40%, 100% {
+
+  0%,
+  40%,
+  100% {
     transform: translateY(0);
   }
+
   20% {
     transform: translateY(-20px);
   }
@@ -186,8 +190,6 @@ section>.inner {
       padding-left: 50px;
 
       .work_img {
-        width: 960px;
-        height: 540px;
         background-color: #fff;
 
         img {
@@ -228,5 +230,89 @@ section>.inner {
     margin-top: 10px;
     position: relative;
     padding-left: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #skills {
+    .skills_contents {
+      .skill {
+        .skill_info {
+          width: 150px;
+          height: 150PX;
+        }
+      }
+    }
+  }
+
+
+  #works {
+    .works_contents {
+      .work {
+        flex-direction: column;
+        padding-left: 0;
+
+        .work_img {
+          width: 100%;
+          background-color: #fff;
+          overflow: hidden;
+        }
+
+        .work_info {
+          padding-left: 0;
+          padding-top: 60px;
+
+          .btn {
+            display: inline;
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper {
+    .swiper-pagination {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #intro {
+    >.inner {
+      .intro_text {
+        font-size: $font-md;
+
+        strong {
+          font-size: $font-lg;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #skills {
+    .skills_contents {
+      ul {
+        flex-direction: column;
+
+        li {
+          padding-top: 30px;
+        }
+
+        li:first-child {
+          padding-top: 0;
+        }
+      }
+
+      .skill {
+        .skill_info {
+          width: 150px;
+          height: 150PX;
+        }
+      }
+    }
   }
 }
