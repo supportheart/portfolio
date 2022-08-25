@@ -179,7 +179,7 @@ section > .inner {
   font-size: 20px;
 }
 
-#contact .contact:first-child {
+#contact .contact.email {
   margin-bottom: 50px;
 }
 #contact strong {
