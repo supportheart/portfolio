@@ -38,15 +38,10 @@ section>.inner {
   margin-left: 10%;
 }
 
-.inner>h2 {
+.inner h2 {
   font-size: $font-lg;
+  padding-bottom: 50px;
 }
-
-.inner>article {
-  padding-top: 50px;
-}
-
-
 
 #header {
   height: 90px;
@@ -114,9 +109,7 @@ section>.inner {
 
 #about {
   .about_contents {
-    display: flex;
-    justify-content: space-between;
-
+    
     .info {
       ul {
         li+li {
@@ -146,10 +139,9 @@ section>.inner {
 
 #skills {
   .skills_contents {
-    max-width: 1200px;
-    margin: 0 auto;
-
     ul {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
     }

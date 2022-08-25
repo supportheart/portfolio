@@ -31,12 +31,9 @@ section > .inner {
   margin-left: 10%;
 }
 
-.inner > h2 {
+.inner h2 {
   font-size: 60px;
-}
-
-.inner > article {
-  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #header {
@@ -104,10 +101,6 @@ section > .inner {
     transform: translateY(-20px);
   }
 }
-#about .about_contents {
-  display: flex;
-  justify-content: space-between;
-}
 #about .about_contents .info ul li + li {
   margin-top: 50px;
 }
@@ -126,11 +119,9 @@ section > .inner {
   height: auto;
 }
 
-#skills .skills_contents {
+#skills .skills_contents ul {
   max-width: 1200px;
   margin: 0 auto;
-}
-#skills .skills_contents ul {
   display: flex;
   justify-content: space-between;
 }
