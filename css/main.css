@@ -35,7 +35,7 @@ section > .inner {
   font-size: 60px;
   padding-bottom: 50px;
 }
-.inner h3 {
+.inner h3.out {
   overflow: hidden;
   position: absolute;
   width: 0;
@@ -57,7 +57,7 @@ section > .inner {
 }
 
 #header .nav {
-  font-style: 20px;
+  font-size: 20px;
   padding-right: 40px;
 }
 
