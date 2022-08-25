@@ -38,10 +38,23 @@ section>.inner {
   margin-left: 10%;
 }
 
-.inner h2 {
-  font-size: $font-lg;
-  padding-bottom: 50px;
+.inner {
+  h2 {
+    font-size: $font-lg;
+    padding-bottom: 50px;
+  }
+
+  h3 {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+  }
 }
+
+
 
 #header {
   height: 90px;
@@ -109,7 +122,7 @@ section>.inner {
 
 #about {
   .about_contents {
-    
+
     .info {
       ul {
         li+li {

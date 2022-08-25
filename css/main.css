@@ -35,6 +35,14 @@ section > .inner {
   font-size: 60px;
   padding-bottom: 50px;
 }
+.inner h3 {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
 
 #header {
   height: 90px;
